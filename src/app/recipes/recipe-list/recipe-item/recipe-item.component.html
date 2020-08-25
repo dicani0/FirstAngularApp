@@ -1,0 +1,11 @@
+<div class="list-group">
+    <a (click)="onItemSelected()" class="list-group-item list-group-item-action clearfix d-flex justify-content-between align-items-center">
+        <div class="mr-auto">
+            <h4>{{ recipe.name }}</h4>
+            <p>{{ recipe.description }}</p>
+        </div>
+        <div class="ml-auto">
+            <img src="{{ recipe.imagePath }}" class="" alt="Image" style="max-height: 70px;">
+        </div>
+    </a>
+</div>
