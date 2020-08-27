@@ -5,7 +5,7 @@ import { ParsedEventType } from '@angular/compiler';
 @Component({
   selector: 'app-recipe-list',
   templateUrl: './recipe-list.component.html',
-  styleUrls: ['./recipe-list.component.scss']
+  styleUrls: [ './recipe-list.component.scss' ]
 })
 export class RecipeListComponent implements OnInit {
   // @Output() eventName = new EventEmitter<ParsedEventType>(); 
@@ -21,6 +21,10 @@ export class RecipeListComponent implements OnInit {
 
   onRecipeSelected(recipe: Recipe) {
     this.recipeWasSelected.emit(recipe);
+  }
+
+  addRecipe() {
+
   }
 
 }
